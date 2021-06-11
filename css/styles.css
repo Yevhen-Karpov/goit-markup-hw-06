@@ -1,57 +1,12 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-img {
-  display: block;
-}
 
-:root {
-  --main-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-text-color: #2196f3;
-  --hero-footer-color: #2f303a;
-  --main-background: #ffffff;
-  --section-background: #f5f4fa;
-  --button-hover: #188ce8;
-  --span-header: #000000;
-  --fill-icon: #afb1b8;
-}
 
-body {
-  font-family: "Roboto", "Raleway", sans-serif;
-  color: var(--main-text-color);
-  line-height: 1.2;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-}
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 
 /*header box*/
 .header {
   border-bottom: 1px solid #ececec;
 }
-.anchor,
+.nav,
 .mailtel {
   display: flex;
   padding-top: 32px;
@@ -63,15 +18,11 @@ body {
   align-items: center;
   background-color: var(--main-background);
 }
-.logo {
-  width: 145px;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  color: var(--accent-text-color);
+.logo-header {
+  
   margin: 24px 93px 25px 0px;
 }
-.anchor-item:not(:last-child) {
+.nav-item:not(:last-child) {
   margin-right: 50px;
 }
 .mailtel {
@@ -126,15 +77,7 @@ body {
   background: var(--accent-text-color);
   border-radius: 2px;
 }
-.logo,
-.nav-link,
-.contact-link,
-.footer-contact {
-  text-decoration: none;
-}
-.list {
-  list-style: none;
-}
+
 .span-header {
   color: var(--span-header);
 }
@@ -170,9 +113,8 @@ body {
   width: 696px;
 }
 
-.hero-button {
-  color: var(--main-background);
-  background-color: var(--accent-text-color);
+/*.hero-button {
+
   font-size: 16px;
   font-weight: 700;
   line-height: 1.8;
@@ -184,13 +126,25 @@ body {
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin: auto;
-  display: block;
+  
+  
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-button:hover {
-  background-color: var(--button-hover);
+.modal-form-btn {
+  display: flex;
+  
+  
+  
+  padding: 10px 55px;
+  
+  color: var(--main-background);
+  margin: auto;
+  background-color: var(--accent-text-color);
+  
 }
+.hero-button:hover {
+  
+}*/
 
 /*section-feature*/
 .feat-cont {
@@ -391,7 +345,7 @@ body {
   margin-bottom: 60px;
   width: 231px;
 }
-.addr {
+.text-addres {
   font-style: normal;
   color: var(--main-background);
   line-height: 1.7;
@@ -690,7 +644,7 @@ color: var(--title-text-color);
   background-size: cover;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-user-agreement:checked+.checkbox-form-user-agreement::before {
+.form-user-agreement:checked + .checkbox-form-user-agreement::before {
   background-image: url(../images/checkbox/Vector1.svg);
   background-color: var(--accent-text-color);
   border-color: var(--accent-text-color);
@@ -699,32 +653,7 @@ color: var(--title-text-color);
 .form-user-agreement:hover + .checkbox-form-user-agreement::before {
   border-color: var(--accent-text-color);
 }
-.custom-checkbox {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-.modal-form-btn {
-  display: flex;
-  width: 200px;
-  height: 50px;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  align-items: center;
-  padding: 10px 55px;
-  letter-spacing: 0.06em;
-  color: var(--main-background);
-  margin: auto;
-  background-color: var(--accent-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-style: none;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-form-btn:hover {
-  background-color: var(--button-hover);
-}
+
+
+
 
