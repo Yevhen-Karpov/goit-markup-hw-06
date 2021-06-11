@@ -690,7 +690,7 @@ color: var(--title-text-color);
   background-size: cover;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-user-agreement:checked+.checkbox-form-user-agreement::before {
+.form-user-agreement:checked + .checkbox-form-user-agreement::before {
   background-image: url(../images/checkbox/Vector1.svg);
   background-color: var(--accent-text-color);
   border-color: var(--accent-text-color);
